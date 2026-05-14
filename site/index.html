@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="ltr" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ALGWAD - Supplies and Contracting</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Montserrat:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Tajawal:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="alternate" hreflang="en" href="/" />
+<link rel="alternate" hreflang="ar" href="/ar/" />
+<link rel="canonical" href="/" />
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-surface": "#263142",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#515f78",
+                        "surface-bright": "#f9f9ff",
+                        "on-secondary-fixed": "#261900",
+                        "secondary-fixed": "#ffdea5",
+                        "on-surface-variant": "#44474d",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#b9c7e4",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "on-primary-container": "#76849f",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#cfdaf1",
+                        "on-primary-fixed": "#0d1c32",
+                        "surface-container": "#e7eeff",
+                        "primary": "#000000",
+                        "on-surface": "#111c2c",
+                        "primary-container": "#0d1c32",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-container-low": "#f0f3ff",
+                        "secondary-container": "#fed488",
+                        "secondary": "#775a19",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#e1e3e4",
+                        "on-background": "#111c2c",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#191c1d",
+                        "on-tertiary-fixed": "#191c1d",
+                        "background": "#f9f9ff",
+                        "on-tertiary-container": "#828485",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "error": "#ba1a1a",
+                        "tertiary": "#000000",
+                        "secondary-fixed-dim": "#e9c176",
+                        "outline": "#75777e",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed-variant": "#39475f",
+                        "on-secondary-container": "#785a1a",
+                        "surface-variant": "#d8e3fa",
+                        "surface-container-highest": "#d8e3fa",
+                        "surface": "#f9f9ff",
+                        "outline-variant": "#c5c6cd",
+                        "surface-container-high": "#dee8ff",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "section-gap": "160px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px"
+                    },
+                    fontFamily: {
+                        "headline-lg-mobile": ["Montserrat", "Tajawal", "sans-serif"],
+                        "display-lg": ["Montserrat", "Tajawal", "sans-serif"],
+                        "body-md": ["Manrope", "Tajawal", "sans-serif"],
+                        "headline-lg": ["Montserrat", "Tajawal", "sans-serif"],
+                        "label-sm": ["Space Grotesk", "Tajawal", "sans-serif"]
+                    },
+                    fontSize: {
+                        "headline-lg-mobile": ["28px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "body-md": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-lg": ["40px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "label-sm": ["14px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .bg-pattern-circuit {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #ffdea5 0%, #e9c176 50%, #775a19 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .text-surface-bright {
+            text-rendering: optimizeLegibility;
+        }
+        .nav-dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .dropdown-menu {
+            display: none;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            background: rgba(38, 49, 66, 0.98);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 222, 165, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-inverse-surface text-surface-bright font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 dark:bg-inverse-surface/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-6">
+<div class="flex flex-col gap-4 w-full">
+<!-- Top Row: Brand and CTA -->
+<div class="flex justify-between items-center w-full">
+<!-- Left: CTA and Language Switcher -->
+<div class="flex items-center gap-6">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-10 py-3 rounded font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all shadow-[0_0_15px_rgba(255,222,165,0.1)]">
+                        CONTACT US
+                    </button>
+<!-- Language Switcher -->
+<div class="flex items-center gap-3 border-l border-outline-variant/30 pl-6">
+  <a class="text-secondary-fixed font-label-sm font-bold border-b-2 border-secondary-fixed" href="/">EN</a>
+  <span class="text-outline-variant/30 text-sm">|</span>
+  <a class="text-surface-variant hover:text-secondary-fixed transition-colors font-body-md" href="/ar/" dir="rtl">عربي</a>
+</div>
+</div>
+<!-- Right: Brand Elements -->
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-start md:items-end">
+<div class="font-headline-lg text-headline-lg font-bold text-secondary dark:text-secondary-fixed font-[Montserrat] leading-none mb-1" dir="ltr">
+                            ALGWAD
+                        </div>
+<div class="font-headline-lg text-lg md:text-2xl font-bold gold-gradient-text font-[Montserrat] leading-none uppercase tracking-tighter">
+                            Supplies &amp; Contracting
+                        </div>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Navigation Links -->
+<div class="flex justify-center md:justify-end items-center border-t border-outline-variant/20 pt-6 mt-2">
+<div class="hidden md:flex items-center gap-12 font-label-sm text-label-sm uppercase tracking-widest">
+<div class="nav-dropdown relative group py-2">
+<button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
+<span>Networks</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<div class="dropdown-menu absolute top-full left-0 min-w-[200px] mt-2 py-4 rounded-lg shadow-2xl z-50">
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Servers</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Switches</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Fiber Optics</a>
+</div>
+</div>
+<div class="nav-dropdown relative group py-2">
+<button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
+<span>AV Solutions</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<div class="dropdown-menu absolute top-full left-0 min-w-[240px] mt-2 py-4 rounded-lg shadow-2xl z-50">
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Audio Control</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Light Control</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">3D Display</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Interactive Screens</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">LED Screens</a>
+</div>
+</div>
+<div class="nav-dropdown relative group py-2">
+<button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
+<span>Computing</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<div class="dropdown-menu absolute top-full left-0 min-w-[180px] mt-2 py-4 rounded-lg shadow-2xl z-50">
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">PC</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Laptop</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Tower</a>
+<a class="block px-6 py-2.5 text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-l-2 border-transparent hover:border-secondary-fixed" href="#">Workstation</a>
+</div>
+</div>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="#">Supplies</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="#contact">Contact</a>
+</div>
+<!-- Mobile Menu Toggle (only visible on mobile) -->
+<button class="md:hidden text-secondary-fixed">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative md:min-h-[95vh] min-h-[70vh] flex items-center justify-center overflow-hidden bg-inverse-surface bg-pattern-circuit">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-inverse-surface/90 z-10"></div>
+<img alt="ALGWAD Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay" src="/assets/logo.jpg"/>
+<div class="relative z-20 max-w-container mx-auto px-margin-mobile md:px-margin-desktop text-center flex flex-col items-center py-20">
+<h1 class="font-display-lg md:text-display-lg text-3xl text-surface-bright mb-10 max-w-5xl font-[Montserrat] md:mt-80 mt-16">
+<span class="gold-gradient-text">ALGWAD</span> <br/> for Supplies and Contracting
+        </h1>
+<p class="font-body-md text-xl md:text-2xl text-surface-variant max-w-4xl mx-auto mb-12 leading-relaxed">
+            Leaders in providing integrated industrial and technological solutions. We combine deep expertise with innovation to meet your project needs with the highest international quality standards.
+        </p>
+</div>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="py-section-gap bg-inverse-surface relative">
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-24">
+<h2 class="font-headline-lg text-headline-lg text-secondary-fixed mb-6 uppercase tracking-wide">Fields of Excellence</h2>
+<div class="w-32 h-1.5 bg-secondary/50 mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- Service 1 (Large) -->
+<div class="md:col-span-8 bg-inverse-surface/40 backdrop-blur-sm border border-secondary/20 rounded-xl p-12 hover:border-secondary-fixed transition-all duration-500 group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-fixed/5 rounded-full blur-3xl -mr-32 -mt-32 transition-transform group-hover:scale-150"></div>
+<div class="relative z-10">
+<div class="w-28 h-28 rounded-lg bg-secondary-fixed/10 flex items-center justify-center mb-10 border border-secondary-fixed/20">
+<span class="material-symbols-outlined text-8xl text-secondary-fixed transition-transform group-hover:scale-110 duration-300" style='font-variation-settings: "FILL" 1;'>devices</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-surface-bright mb-6">Technology &amp; Communications</h3>
+<p class="font-body-md text-xl text-surface-variant leading-relaxed">
+                        Advanced solutions in technology and communications, providing the latest equipment and systems to ensure stable and efficient connectivity for companies and major institutions.
+                    </p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="md:col-span-4 bg-inverse-surface/40 backdrop-blur-sm border border-secondary/20 rounded-xl p-12 hover:border-secondary-fixed transition-all duration-500 group">
+<div class="w-28 h-28 rounded-lg bg-secondary-fixed/10 flex items-center justify-center mb-10 border border-secondary-fixed/20">
+<span class="material-symbols-outlined text-8xl text-secondary-fixed transition-transform group-hover:scale-110 duration-300">router</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-bright mb-6">Networks &amp; Computing</h3>
+<p class="font-body-md text-lg text-surface-variant leading-relaxed">
+                    Design and supply of strong network infrastructure and computer hardware with standard specifications.
+                </p>
+</div>
+<!-- Service 3 -->
+<div class="md:col-span-4 bg-inverse-surface/40 backdrop-blur-sm border border-secondary/20 rounded-xl p-12 hover:border-secondary-fixed transition-all duration-500 group">
+<div class="w-28 h-28 rounded-lg bg-secondary-fixed/10 flex items-center justify-center mb-10 border border-secondary-fixed/20">
+<span class="material-symbols-outlined text-8xl text-secondary-fixed transition-transform group-hover:scale-110 duration-300">settings_input_hdmi</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-bright mb-6">Display &amp; Control Systems</h3>
+<p class="font-body-md text-lg text-surface-variant leading-relaxed">
+                    Integrated systems for sound, light, and projection for conference halls and major events.
+                </p>
+</div>
+<!-- Service 4 (Large) -->
+<div class="md:col-span-8 bg-inverse-surface/40 backdrop-blur-sm border border-secondary/20 rounded-xl p-12 hover:border-secondary-fixed transition-all duration-500 group relative overflow-hidden">
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-fixed/5 rounded-full blur-3xl -ml-32 -mb-32 transition-transform group-hover:scale-150"></div>
+<div class="relative z-10">
+<div class="w-28 h-28 rounded-lg bg-secondary-fixed/10 flex items-center justify-center mb-10 border border-secondary-fixed/20">
+<span class="material-symbols-outlined text-8xl text-secondary-fixed transition-transform group-hover:scale-110 duration-300" style='font-variation-settings: "FILL" 1;'>precision_manufacturing</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-surface-bright mb-6">General Supplies</h3>
+<p class="font-body-md text-xl text-surface-variant leading-relaxed">
+                        We cover all project needs from general supplies, focusing on quality, reliability, and speed of implementation according to set schedules.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Partners -->
+<section class="py-24 bg-inverse-surface/60 border-y border-secondary/10 overflow-hidden">
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-secondary-fixed mb-4 uppercase tracking-[0.2em]">Success Partners</h2>
+<div class="w-20 h-1 bg-secondary/30 mx-auto rounded-full"></div>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-16 md:gap-32 opacity-70 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="h-28 md:h-36 flex items-center justify-center group">
+<img alt="HP Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125" src="https://lh3.googleusercontent.com/aida/ADBb0ui4dBkQq0-gsp0gmtc0saDaX5nZYZJOiX80npYC__ykEkDwkaP6mQYX-Or25O-Oa1CuQh-B-9NU-RtH34qJYsGXjLaaYDH1614Q_A34SNy63UNJ_TFdP06MwMDJAG0YW3aP6iVs0gIzzdUEJSEaogOxRyKspEpQwklwWJiWt21D8Fv1wyEl0EqJNNtb8mVDLpxKJh-9naLUuuOkHxBbfn18b2CoFX-LO9hTiEkv9DrGgtdXAWnl0FA4v--z5uXq5XO73qi1NT9JQXU"/>
+</div>
+<div class="h-28 md:h-36 flex items-center justify-center group">
+<img alt="HPE Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125 shadow-sm" src="https://lh3.googleusercontent.com/aida/ADBb0ujUit765JBCuLLQ94wlOBwlkig3A3CgSmaxtXLTr34QHg9SGq2SqcNotoHZ4P3eqxLlZaY9h3BuQiWr-27bxGjy7uyB0uHVdJqmqwxsbkQ-v4xrPb-GSUfdUFpQBUON8Dim7GvnRzI8lJ0ssXQPKdyYtp-jaarkIZKd0KA1xkBZPqCRAlfCgii2JRGD8-9rPheTmmeqWqBB6zkoU4CElXMcnwgnle5Oh7vIHVaD9nBIFNkflkABwpiPieIzIQ5ZZNVt3ymrQ6GxyQ"/>
+</div>
+<div class="h-28 md:h-36 flex items-center justify-center group">
+<img alt="Crestron Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125" src="https://lh3.googleusercontent.com/aida/ADBb0ujQGu57Qi6s0uj4oMVKPZQR4b2dH66GjQhe1OJPlSuRV6vshPQkbogEb1cjiafPwlhfVFBD6oa2wKM2vZjjnfwbSsPIBHrp13mprWa6aLPxXbodYzu5FCYmuwH9mxmpkOlKtVgT6IWhG08KGCY6lQRi8Ordiu1DxyBJSh0Vx9tKgHxfpy2FpZwpbASeoCjDf6-3TYozzaUEjbkmfF_JTJtolCT_PjQTJVP7MnKS9o6s0ZJmkDlaWeVgUL7wbJt6DOAFM3FriLGJobA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Info Section -->
+<section class="py-section-gap bg-inverse-surface border-t border-secondary/10 relative overflow-hidden">
+<div class="absolute inset-0 bg-pattern-circuit opacity-30"></div>
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="bg-surface-tint/10 border border-secondary/20 rounded-xl p-12 md:p-16 backdrop-blur-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full border border-secondary-fixed/30 flex items-center justify-center mb-6 bg-inverse-surface">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">mail</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-secondary-fixed mb-3 uppercase tracking-widest">Email Address</h4>
+<p class="font-body-md text-lg text-surface-bright font-[Montserrat]" dir="ltr">info@algwad.com</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full border border-secondary-fixed/30 flex items-center justify-center mb-6 bg-inverse-surface">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">call</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-secondary-fixed mb-3 uppercase tracking-widest">Phone Number</h4>
+<p class="font-body-md text-lg text-surface-bright font-[Montserrat]" dir="ltr">+20 1126198498</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full border border-secondary-fixed/30 flex items-center justify-center mb-6 bg-inverse-surface">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">chat</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-secondary-fixed mb-3 uppercase tracking-widest">WhatsApp</h4>
+<p class="font-body-md text-lg text-surface-bright font-[Montserrat] leading-relaxed" dir="ltr">+20 1288355586<br/>+20 1018010180</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full border border-secondary-fixed/30 flex items-center justify-center mb-6 bg-inverse-surface">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">location_on</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-secondary-fixed mb-3 uppercase tracking-widest">Address</h4>
+<p class="font-body-md text-lg text-surface-bright leading-relaxed">10 Arab Contractors Buildings,<br/>Sheraton Heliopolis, Cairo, Egypt</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer/Contact Form -->
+<section class="py-section-gap bg-inverse-surface relative overflow-hidden" id="contact">
+<div class="absolute inset-0 bg-pattern-circuit opacity-10"></div>
+<div class="max-w-container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-display-lg text-display-lg text-surface-bright mb-10">
+                    Let's Build Your <span class="gold-gradient-text">Future</span> Together
+                </h2>
+<p class="font-body-md text-xl text-surface-variant mb-12 leading-relaxed">
+                    We are here to discuss your project needs and provide the best technical and supply solutions. Our specialized team is ready to answer your inquiries and provide tailored consulting.
+                </p>
+<div class="space-y-10">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full border border-secondary-fixed/30 flex items-center justify-center bg-inverse-surface/50 text-secondary-fixed">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<p class="font-body-md text-xl text-surface-bright font-semibold">Specialized Technical Support 24/7</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full border border-secondary-fixed/30 flex items-center justify-center bg-inverse-surface/50 text-secondary-fixed">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<p class="font-body-md text-xl text-surface-bright font-semibold">Solutions Compliant with Global Specs</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-tint/5 border border-secondary/20 rounded-2xl p-10 md:p-14 backdrop-blur-md shadow-2xl">
+<form class="space-y-8">
+<div>
+<label class="block font-label-sm text-secondary-fixed mb-3 uppercase tracking-widest text-base">Full Name</label>
+<input class="w-full bg-inverse-surface/80 border border-outline/30 rounded-lg py-5 px-8 text-lg text-surface-bright focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all outline-none" placeholder="Enter your name here..." type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-secondary-fixed mb-3 uppercase tracking-widest text-base">Email Address</label>
+<input class="w-full bg-inverse-surface/80 border border-outline/30 rounded-lg py-5 px-8 text-lg text-surface-bright focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all outline-none" placeholder="example@mail.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-secondary-fixed mb-3 uppercase tracking-widest text-base">Message</label>
+<textarea class="w-full bg-inverse-surface/80 border border-outline/30 rounded-lg py-5 px-8 text-lg text-surface-bright focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all outline-none resize-none" placeholder="How can we help you?" rows="5"></textarea>
+</div>
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed py-6 rounded-lg font-headline-lg-mobile text-xl font-bold hover:bg-secondary-fixed-dim transition-all shadow-[0_0_30px_rgba(255,222,165,0.15)] uppercase tracking-widest" type="submit">
+                        SEND MESSAGE
+                    </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest full-width border-t border-secondary/20">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-16">
+<div class="mb-10 md:mb-0">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed font-[Montserrat] mb-3" dir="ltr">ALGWAD</div>
+<p class="font-body-md text-lg text-surface-variant/70">© 2024 ALGWAD for supplies and contracting. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-10 font-label-sm text-base uppercase tracking-wider">
+<a class="text-surface-variant/70 hover:text-secondary-fixed hover:underline decoration-secondary-fixed/50 underline-offset-8 transition-all duration-300" href="#">Privacy Policy</a>
+<a class="text-surface-variant/70 hover:text-secondary-fixed hover:underline decoration-secondary-fixed/50 underline-offset-8 transition-all duration-300" href="#">Terms of Service</a>
+<a class="text-surface-variant/70 hover:text-secondary-fixed hover:underline decoration-secondary-fixed/50 underline-offset-8 transition-all duration-300" href="#">Service Portfolio</a>
+<a class="text-surface-variant/70 hover:text-secondary-fixed hover:underline decoration-secondary-fixed/50 underline-offset-8 transition-all duration-300" href="#">Cairo Office</a>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp Action -->
+<a class="fixed bottom-10 right-10 w-20 h-20 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(37,211,102,0.5)] hover:scale-110 transition-all z-50 group" href="https://wa.me/201288355586" target="_blank">
+<div class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></div>
+<span class="material-symbols-outlined text-white text-5xl relative z-10">chat</span>
+<span class="absolute right-24 bg-inverse-surface border border-secondary/20 text-surface-bright px-6 py-3 rounded-xl text-lg font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity font-body-md shadow-2xl border-r-4 border-r-secondary-fixed">Contact via WhatsApp</span>
+</a>
+</body></html>
