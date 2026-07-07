@@ -150,14 +150,14 @@
 <div class="flex justify-between items-center max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-6">
 <div class="flex flex-col gap-4 w-full">
 <!-- Top Row: Brand and CTA -->
-<div class="flex justify-between items-center w-full">
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
 <!-- Left: CTA and Language Switcher -->
-<div class="flex items-center gap-6">
-<button class="bg-secondary-fixed text-on-secondary-fixed px-10 py-3 rounded font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all shadow-[0_0_15px_rgba(255,222,165,0.1)]">
+<div class="flex items-center gap-4 md:gap-6">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-5 md:px-10 py-2 md:py-3 rounded font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all shadow-[0_0_15px_rgba(255,222,165,0.1)]">
                         CONTACT US
                     </button>
 <!-- Language Switcher -->
-<div class="flex items-center gap-3 border-l border-outline-variant/30 pl-6">
+<div class="flex items-center gap-3 border-l border-outline-variant/30 pl-4 md:pl-6">
   <a class="text-secondary-fixed font-label-sm font-bold border-b-2 border-secondary-fixed" href="/">EN</a>
   <span class="text-outline-variant/30 text-sm">|</span>
   <a class="text-surface-variant hover:text-secondary-fixed transition-colors font-body-md" href="/ar/" dir="rtl">عربي</a>
@@ -165,11 +165,11 @@
 </div>
 <!-- Right: Brand Elements -->
 <div class="flex items-center gap-4">
-<div class="flex flex-col items-start md:items-end">
-<div class="font-headline-lg text-headline-lg font-bold text-secondary dark:text-secondary-fixed font-[Montserrat] leading-none mb-1" dir="ltr">
+<div class="flex flex-col items-center sm:items-end">
+<div class="font-headline-lg text-2xl md:text-headline-lg font-bold text-secondary dark:text-secondary-fixed font-[Montserrat] leading-none mb-1" dir="ltr">
                             ALGWAD
                         </div>
-<div class="font-headline-lg text-lg md:text-2xl font-bold gold-gradient-text font-[Montserrat] leading-none uppercase tracking-tighter">
+<div class="font-headline-lg text-sm md:text-2xl font-bold gold-gradient-text font-[Montserrat] leading-none uppercase tracking-tighter">
                             Supplies &amp; Contracting
                         </div>
 </div>
@@ -217,10 +217,19 @@
 <a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="#">Supplies</a>
 <a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="#contact">Contact</a>
 </div>
-<!-- Mobile Menu Toggle (only visible on mobile) -->
-<button class="md:hidden text-secondary-fixed">
+<!-- Mobile Menu (native details/summary, no JS required) -->
+<details class="md:hidden w-full">
+<summary class="flex items-center justify-center gap-2 list-none cursor-pointer text-secondary-fixed py-2 [&::-webkit-details-marker]:hidden">
 <span class="material-symbols-outlined">menu</span>
-</button>
+</summary>
+<div class="flex flex-col items-center gap-1 pt-2 pb-4 font-label-sm text-label-sm uppercase tracking-widest">
+<a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="#">Networks</a>
+<a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="#">AV Solutions</a>
+<a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="#">Computing</a>
+<a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="#">Supplies</a>
+<a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="#contact">Contact</a>
+</div>
+</details>
 </div>
 </div>
 </div>
@@ -402,7 +411,7 @@
 </div>
 </div>
 </section>
-<footer class="bg-inverse-surface dark:bg-surface-container-lowest full-width border-t border-secondary/20">
+<footer class="bg-inverse-surface full-width border-t border-secondary/20">
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center max-w-container mx-auto px-margin-mobile md:px-margin-desktop py-16">
 <div class="mb-10 md:mb-0">
 <div class="font-headline-lg text-headline-lg text-secondary-fixed font-[Montserrat] mb-3" dir="ltr">ALGWAD</div>
