@@ -1,7 +1,7 @@
 [build]
   base = ""
   publish = "public"
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify --baseURL=\"${DEPLOY_PRIME_URL:-https://algwad.com/}\""
   # functions = "functions"
 
 [build.environment]
