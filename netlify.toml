@@ -11,10 +11,9 @@
   targetPort = 1313
   publish = "public"
 
-[headers]
-  [[headers.defaults]]
-    for = "/*"
-    [headers.defaults.values]
-      X-Frame-Options = "DENY"
-      X-Content-Type-Options = "nosniff"
-      Referrer-Policy = "no-referrer-when-downgrade"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
