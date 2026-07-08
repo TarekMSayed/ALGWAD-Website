@@ -1,0 +1,36 @@
+<section class="py-section-gap bg-inverse-surface border-t border-secondary/10 relative overflow-hidden" id="contact">
+<div class="px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="bg-surface-tint/10 border border-secondary/20 rounded-xl p-12 md:p-16 backdrop-blur-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full border border-secondary-fixed/30 flex items-center justify-center mb-6 bg-inverse-surface">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">mail</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-secondary-fixed mb-3 uppercase tracking-widest">{{ i18n "email_label" }}</h4>
+<p class="font-body-md text-lg text-surface-bright font-[Montserrat]" dir="ltr">{{ .Site.Params.email }}</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full border border-secondary-fixed/30 flex items-center justify-center mb-6 bg-inverse-surface">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">call</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-secondary-fixed mb-3 uppercase tracking-widest">{{ i18n "phone_label" }}</h4>
+<p class="font-body-md text-lg text-surface-bright font-[Montserrat]" dir="ltr">{{ .Site.Params.phone }}</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full border border-secondary-fixed/30 flex items-center justify-center mb-6 bg-inverse-surface">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">chat</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-secondary-fixed mb-3 uppercase tracking-widest">{{ i18n "whatsapp_label" }}</h4>
+<p class="font-body-md text-lg text-surface-bright font-[Montserrat] leading-relaxed" dir="ltr">{{ range $i, $n := .Site.Params.whatsappNumbers }}{{ if $i }}<br/>{{ end }}{{ $n }}{{ end }}</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full border border-secondary-fixed/30 flex items-center justify-center mb-6 bg-inverse-surface">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">location_on</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-secondary-fixed mb-3 uppercase tracking-widest">{{ i18n "address_label" }}</h4>
+<p class="font-body-md text-lg text-surface-bright leading-relaxed">{{ range $i, $l := .Site.Language.Params.addressLines }}{{ if $i }}<br/>{{ end }}{{ $l }}{{ end }}</p>
+</div>
+</div>
+</div>
+</div>
+</section>

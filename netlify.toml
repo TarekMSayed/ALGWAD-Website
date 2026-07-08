@@ -1,0 +1,20 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.162.1"
+  NODE_VERSION = "22"
+
+[dev]
+  command = "hugo server -D"
+  targetPort = 1313
+  publish = "public"
+
+[headers]
+  [[headers.defaults]]
+    for = "/*"
+    [headers.defaults.values]
+      X-Frame-Options = "DENY"
+      X-Content-Type-Options = "nosniff"
+      Referrer-Policy = "no-referrer-when-downgrade"

@@ -1,0 +1,89 @@
+[contact_cta]
+other = "تواصل معنا"
+
+[nav_networks]
+other = "الشبكات"
+[nav_networks_servers]
+other = "سيرفرات"
+[nav_networks_switches]
+other = "سويتشات"
+[nav_networks_fiber]
+other = "كابلات فايبر"
+
+[nav_av]
+other = "الصوتيات والمرئيات"
+[nav_av_audio]
+other = "التحكم في الصوت"
+[nav_av_light]
+other = "التحكم في الضوء"
+[nav_av_3d]
+other = "أجهزة عرض ثلاثي الأبعاد"
+[nav_av_interactive]
+other = "شاشات تفاعلية"
+[nav_av_led]
+other = "شاشات ليد سكرين"
+
+[nav_computing]
+other = "الحاسبات"
+[nav_computing_pc]
+other = "PC"
+[nav_computing_laptop]
+other = "Laptop"
+[nav_computing_tower]
+other = "Tower"
+[nav_computing_workstation]
+other = "Workstation"
+
+[nav_supplies]
+other = "التوريدات"
+
+[nav_contact]
+other = "اتصل بنا"
+
+[fields_of_excellence]
+other = "مجالات التميز"
+[success_partners]
+other = "شركاؤنا في النجاح"
+
+[email_label]
+other = "البريد الإلكتروني"
+[phone_label]
+other = "الهاتف"
+[whatsapp_label]
+other = "واتساب"
+[address_label]
+other = "العنوان"
+
+[support_badge]
+other = "دعم فني متخصص على مدار الساعة"
+[compliance_badge]
+other = "حلول مطابقة للمواصفات العالمية"
+
+[form_name_label]
+other = "الاسم الكامل"
+[form_name_placeholder]
+other = "أدخل اسمك هنا..."
+[form_email_placeholder]
+other = "example@mail.com"
+[form_message_label]
+other = "الرسالة"
+[form_message_placeholder]
+other = "كيف يمكننا مساعدتك؟"
+[form_submit]
+other = "إرسال الرسالة"
+
+[footer_privacy]
+other = "Privacy Policy"
+[footer_terms]
+other = "Terms of Service"
+[footer_portfolio]
+other = "Service Portfolio"
+[footer_office]
+other = "Cairo Office"
+[footer_copyright]
+other = "© 2024 ALGWAD for supplies and contracting. All rights reserved."
+
+[whatsapp_tooltip]
+other = "تواصل عبر واتساب"
+[lang_switch_aria]
+other = "تبديل اللغة"

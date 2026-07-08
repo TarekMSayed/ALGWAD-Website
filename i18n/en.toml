@@ -1,0 +1,89 @@
+[contact_cta]
+other = "CONTACT US"
+
+[nav_networks]
+other = "Networks"
+[nav_networks_servers]
+other = "Servers"
+[nav_networks_switches]
+other = "Switches"
+[nav_networks_fiber]
+other = "Fiber Optics"
+
+[nav_av]
+other = "AV Solutions"
+[nav_av_audio]
+other = "Audio Control"
+[nav_av_light]
+other = "Light Control"
+[nav_av_3d]
+other = "3D Display"
+[nav_av_interactive]
+other = "Interactive Screens"
+[nav_av_led]
+other = "LED Screens"
+
+[nav_computing]
+other = "Computing"
+[nav_computing_pc]
+other = "PC"
+[nav_computing_laptop]
+other = "Laptop"
+[nav_computing_tower]
+other = "Tower"
+[nav_computing_workstation]
+other = "Workstation"
+
+[nav_supplies]
+other = "Supplies"
+
+[nav_contact]
+other = "Contact"
+
+[fields_of_excellence]
+other = "Fields of Excellence"
+[success_partners]
+other = "Success Partners"
+
+[email_label]
+other = "Email Address"
+[phone_label]
+other = "Phone Number"
+[whatsapp_label]
+other = "WhatsApp"
+[address_label]
+other = "Address"
+
+[support_badge]
+other = "Specialized Technical Support 24/7"
+[compliance_badge]
+other = "Solutions Compliant with Global Specs"
+
+[form_name_label]
+other = "Full Name"
+[form_name_placeholder]
+other = "Enter your name here..."
+[form_email_placeholder]
+other = "example@mail.com"
+[form_message_label]
+other = "Message"
+[form_message_placeholder]
+other = "How can we help you?"
+[form_submit]
+other = "SEND MESSAGE"
+
+[footer_privacy]
+other = "Privacy Policy"
+[footer_terms]
+other = "Terms of Service"
+[footer_portfolio]
+other = "Service Portfolio"
+[footer_office]
+other = "Cairo Office"
+[footer_copyright]
+other = "© 2024 ALGWAD for supplies and contracting. All rights reserved."
+
+[whatsapp_tooltip]
+other = "Contact via WhatsApp"
+[lang_switch_aria]
+other = "Switch language"

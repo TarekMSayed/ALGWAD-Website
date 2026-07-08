@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{ partial "hero.html" . }}
+{{ $servicesSection := .Site.GetPage "services" }}
+<section class="py-section-gap bg-inverse-surface relative" id="services">
+<div class="px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-24">
+<h2 class="font-headline-lg text-headline-lg text-secondary-fixed mb-6 uppercase tracking-wide">{{ i18n "fields_of_excellence" }}</h2>
+<div class="w-32 h-1.5 bg-secondary/50 mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+{{ range where $servicesSection.Pages "Params.featured" true }}
+{{ partial "service-card.html" . }}
+{{ end }}
+</div>
+</div>
+</section>
+{{ partial "partners.html" . }}
+{{ partial "contact-info.html" . }}
+<section class="py-section-gap bg-inverse-surface relative overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-display-lg text-display-lg text-surface-bright mb-10">
+{{ .Params.contactHeadingPre }} <span class="gold-gradient-text">{{ .Params.contactHeadingHighlight }}</span> {{ .Params.contactHeadingPost }}
+</h2>
+<p class="font-body-md text-xl text-surface-variant mb-12 leading-relaxed">
+{{ .Params.contactIntro }}
+</p>
+<div class="space-y-10">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full border border-secondary-fixed/30 flex items-center justify-center bg-inverse-surface/50 text-secondary-fixed">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<p class="font-body-md text-xl text-surface-bright font-semibold">{{ i18n "support_badge" }}</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full border border-secondary-fixed/30 flex items-center justify-center bg-inverse-surface/50 text-secondary-fixed">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<p class="font-body-md text-xl text-surface-bright font-semibold">{{ i18n "compliance_badge" }}</p>
+</div>
+</div>
+</div>
+{{ partial "contact-form.html" . }}
+</div>
+</div>
+</section>
+{{ end }}

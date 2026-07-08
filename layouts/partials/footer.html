@@ -1,0 +1,16 @@
+{{ $home := relLangURL "" }}
+{{ $servicesSection := .Site.GetPage "services" }}
+<footer class="bg-inverse-surface full-width border-t border-secondary/20">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-margin-mobile md:px-margin-desktop py-16">
+<div class="mb-10 md:mb-0">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed font-[Montserrat] mb-3" dir="ltr">ALGWAD</div>
+<p class="font-body-md text-lg text-surface-variant/70">{{ i18n "footer_copyright" }}</p>
+</div>
+<div class="flex flex-wrap gap-10 font-label-sm text-base uppercase tracking-wider">
+<a class="text-surface-variant/70 hover:text-secondary-fixed hover:underline decoration-secondary-fixed/50 underline-offset-8 transition-all duration-300" href="#">{{ i18n "footer_privacy" }}</a>
+<a class="text-surface-variant/70 hover:text-secondary-fixed hover:underline decoration-secondary-fixed/50 underline-offset-8 transition-all duration-300" href="#">{{ i18n "footer_terms" }}</a>
+<a class="text-surface-variant/70 hover:text-secondary-fixed hover:underline decoration-secondary-fixed/50 underline-offset-8 transition-all duration-300" href="{{ $servicesSection.Permalink }}">{{ i18n "footer_portfolio" }}</a>
+<a class="text-surface-variant/70 hover:text-secondary-fixed hover:underline decoration-secondary-fixed/50 underline-offset-8 transition-all duration-300" href="{{ $home }}#contact">{{ i18n "footer_office" }}</a>
+</div>
+</div>
+</footer>

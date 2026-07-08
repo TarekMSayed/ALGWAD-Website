@@ -1,0 +1,11 @@
+{
+  "name": "algwad-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ALGWAD Website",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  },
+  "license": "UNLICENSED"
+}
