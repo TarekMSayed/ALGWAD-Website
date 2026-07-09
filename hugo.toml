@@ -1,0 +1,40 @@
+baseURL = "https://algwad.com/"
+title = "ALGWAD"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[languages.en]
+  label = "English"
+  direction = "ltr"
+  weight = 1
+  [languages.en.params]
+    dir = "ltr"
+    shortLabel = "EN"
+    tagline = "Supplies & IT Solutions"
+    ogLocale = "en_US"
+    addressLines = ["10 Arab Contractors Buildings,", "Sheraton Heliopolis, Cairo, Egypt"]
+
+[languages.ar]
+  label = "العربية"
+  direction = "rtl"
+  weight = 2
+  [languages.ar.params]
+    dir = "rtl"
+    shortLabel = "عربي"
+    tagline = "الجواد للتوريدات الهندسية وحلول تكنولوجيا المعلومات"
+    ogLocale = "ar_AR"
+    addressLines = ["10 عمارات المقاولون العرب،", "شيراتون هليوبوليس، القاهرة، مصر"]
+
+[params]
+  email = "info@algwad.com"
+  phone = "+20 1126198498"
+  whatsappNumbers = ["+20 1555333213", "+20 1037746044"]
+  whatsappLink = "https://wa.me/201555333213"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[imaging]
+  quality = 85

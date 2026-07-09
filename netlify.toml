@@ -1,0 +1,21 @@
+[build]
+  base = ""
+  publish = "public"
+  command = "hugo --gc --minify --baseURL=\"${DEPLOY_PRIME_URL:-https://algwad.com/}\""
+  # functions = "functions"
+
+[build.environment]
+  HUGO_VERSION = "0.162.1"
+  NODE_VERSION = "22"
+
+[dev]
+  command = "hugo server -D"
+  targetPort = 1313
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"

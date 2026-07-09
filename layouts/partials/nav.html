@@ -1,0 +1,136 @@
+{{ $networks := .Site.GetPage "services/networks-computing" }}
+{{ $display := .Site.GetPage "services/display-control-systems" }}
+{{ $supplies := .Site.GetPage "services/general-supplies" }}
+{{ $home := relLangURL "" }}
+<nav class="bg-surface/90 dark:bg-inverse-surface/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6">
+<div class="flex flex-col gap-4 w-full">
+<!-- Top Row: Brand and CTA -->
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
+<!-- Start: Brand Elements -->
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-center sm:items-start">
+<a href="{{ $home }}" class="font-headline-lg text-2xl md:text-headline-lg font-bold text-secondary dark:text-secondary-fixed font-[Montserrat] leading-none mb-1" dir="ltr">
+ALGWAD
+</a>
+<div class="font-headline-lg text-sm md:text-2xl font-bold accent-gradient-text font-[Montserrat] leading-none uppercase tracking-tighter">
+{{ .Site.Language.Params.tagline }}
+</div>
+</div>
+</div>
+<!-- End: CTA and Language Switcher -->
+<div class="flex items-center gap-4 md:gap-6">
+<a class="bg-secondary-fixed text-on-secondary-fixed px-5 md:px-10 py-2 md:py-3 rounded font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all shadow-[0_0_15px_rgba(18,115,235,0.15)] dark:shadow-[0_0_15px_rgba(255,222,165,0.1)]" href="{{ $home }}#contact">
+{{ i18n "contact_cta" }}
+</a>
+<!-- Language Switcher -->
+<div class="flex items-center gap-3 border-s border-outline-variant/30 ps-4 md:ps-6">
+{{ range hugo.Sites }}
+{{ if eq .Language.Lang $.Site.Language.Lang }}
+<span class="text-secondary-fixed font-label-sm font-bold border-b-2 border-secondary-fixed uppercase">{{ .Language.Params.shortLabel }}</span>
+{{ else }}
+{{ $lang := .Language.Lang }}
+{{ $href := .Home.Permalink }}
+{{ range $.Translations }}{{ if eq .Language.Lang $lang }}{{ $href = .Permalink }}{{ end }}{{ end }}
+<a aria-label="{{ i18n "lang_switch_aria" }}" class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors font-body-md" href="{{ $href }}">{{ .Language.Params.shortLabel }}</a>
+{{ end }}
+{{ end }}
+</div>
+<button id="theme-toggle" aria-label="{{ i18n "theme_toggle_aria" }}" class="flex items-center border-s border-outline-variant/30 ps-4 md:ps-6 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined hidden dark:inline">light_mode</span>
+<span class="material-symbols-outlined dark:hidden">dark_mode</span>
+</button>
+</div>
+</div>
+<!-- Bottom Row: Navigation Links -->
+<div class="flex justify-center md:justify-start items-center border-t border-outline-variant/20 pt-6 mt-2">
+<div class="hidden md:flex items-center gap-12 font-label-sm text-label-sm uppercase tracking-widest">
+<div class="nav-dropdown relative group py-2">
+<a href="{{ $networks.Permalink }}" class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
+<span>{{ i18n "nav_networks" }}</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</a>
+<div class="dropdown-menu absolute top-full start-0 min-w-[200px] pt-6 pb-4 rounded-lg shadow-2xl z-50">
+{{ range $networks.Pages }}
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}
+</div>
+</div>
+<div class="nav-dropdown relative group py-2">
+<a href="{{ $display.Permalink }}" class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
+<span>{{ i18n "nav_av" }}</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</a>
+<div class="dropdown-menu absolute top-full start-0 min-w-[240px] pt-6 pb-4 rounded-lg shadow-2xl z-50">
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_audio" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_light" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_3d" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_interactive" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_led" }}</a>
+</div>
+</div>
+<div class="nav-dropdown relative group py-2">
+<button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
+<span>{{ i18n "nav_computing" }}</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<div class="dropdown-menu absolute top-full start-0 min-w-[180px] pt-6 pb-4 rounded-lg shadow-2xl z-50">
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_pc" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_laptop" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_tower" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_workstation" }}</a>
+</div>
+</div>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="{{ $supplies.Permalink }}">{{ i18n "nav_supplies" }}</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="{{ $home }}#contact">{{ i18n "nav_contact" }}</a>
+</div>
+<!-- Mobile Menu (native details/summary, no JS required) -->
+<details class="md:hidden w-full">
+<summary class="flex items-center justify-center gap-2 list-none cursor-pointer text-secondary-fixed py-2 [&::-webkit-details-marker]:hidden">
+<span class="material-symbols-outlined">menu</span>
+</summary>
+<div class="flex flex-col items-center gap-1 pt-2 pb-4 font-label-sm text-label-sm uppercase tracking-widest w-full">
+<details class="group/sub w-full text-center">
+<summary class="flex items-center justify-center gap-1 py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<span>{{ i18n "nav_networks" }}</span>
+<span class="material-symbols-outlined text-sm transition-transform group-open/sub:rotate-180">keyboard_arrow_down</span>
+</summary>
+<div class="flex flex-col items-center gap-1 pb-2">
+{{ range $networks.Pages }}
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}
+</div>
+</details>
+<details class="group/sub w-full text-center">
+<summary class="flex items-center justify-center gap-1 py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<span>{{ i18n "nav_av" }}</span>
+<span class="material-symbols-outlined text-sm transition-transform group-open/sub:rotate-180">keyboard_arrow_down</span>
+</summary>
+<div class="flex flex-col items-center gap-1 pb-2">
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_audio" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_light" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_3d" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_interactive" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_led" }}</a>
+</div>
+</details>
+<details class="group/sub w-full text-center">
+<summary class="flex items-center justify-center gap-1 py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<span>{{ i18n "nav_computing" }}</span>
+<span class="material-symbols-outlined text-sm transition-transform group-open/sub:rotate-180">keyboard_arrow_down</span>
+</summary>
+<div class="flex flex-col items-center gap-1 pb-2">
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_pc" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_laptop" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_tower" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_workstation" }}</a>
+</div>
+</details>
+<a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="{{ $supplies.Permalink }}">{{ i18n "nav_supplies" }}</a>
+<a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="{{ $home }}#contact">{{ i18n "nav_contact" }}</a>
+</div>
+</details>
+</div>
+</div>
+</div>
+</nav>
