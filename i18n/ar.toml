@@ -87,3 +87,5 @@ other = "© 2026 ALGWAD for engineering supplies and IT solutions. All rights re
 other = "تواصل عبر واتساب"
 [lang_switch_aria]
 other = "تبديل اللغة"
+[theme_toggle_aria]
+other = "تبديل الوضع الفاتح والداكن"

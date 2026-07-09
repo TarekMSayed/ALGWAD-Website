@@ -87,3 +87,5 @@ other = "© 2026 ALGWAD for engineering supplies and IT solutions. All rights re
 other = "Contact via WhatsApp"
 [lang_switch_aria]
 other = "Switch language"
+[theme_toggle_aria]
+other = "Toggle light and dark theme"

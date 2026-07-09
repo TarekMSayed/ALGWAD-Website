@@ -1,14 +1,14 @@
 {{ define "main" }}
-<section class="py-section-gap bg-inverse-surface relative">
+<section class="py-section-gap bg-surface dark:bg-inverse-surface relative">
 <div class="px-margin-mobile md:px-margin-desktop relative z-10">
 <div class="max-w-3xl mx-auto text-center">
 <div class="w-28 h-28 mx-auto rounded-lg bg-gradient-to-br from-secondary-fixed/25 via-secondary-fixed/10 to-transparent flex items-center justify-center mb-8 border border-secondary-fixed/40">
 <span class="material-symbols-outlined text-8xl text-secondary-fixed" style='font-variation-settings: "FILL" 1;'>{{ .Params.icon }}</span>
 </div>
-<h1 class="font-headline-lg text-headline-lg text-surface-bright mb-6">{{ .Title }}</h1>
-<p class="font-body-md text-xl text-surface-variant leading-relaxed">{{ .Params.summary }}</p>
+<h1 class="font-headline-lg text-headline-lg text-on-surface dark:text-surface-bright mb-6">{{ .Title }}</h1>
+<p class="font-body-md text-xl text-on-surface-variant dark:text-surface-variant leading-relaxed">{{ .Params.summary }}</p>
 {{ with .Content }}
-<div class="font-body-md text-lg text-surface-variant leading-relaxed mt-8 text-start">{{ . }}</div>
+<div class="font-body-md text-lg text-on-surface-variant dark:text-surface-variant leading-relaxed mt-8 text-start">{{ . }}</div>
 {{ end }}
 </div>
 </div>

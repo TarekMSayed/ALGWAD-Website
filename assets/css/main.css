@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 @theme {
   /* Colors — transcribed 1:1 from DESIGN.md's YAML token block */
   --color-surface: #f9f9ff;
@@ -155,7 +158,11 @@ body {
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.3s ease;
-  background: rgba(38, 49, 66, 0.98);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 222, 165, 0.2);
+}
+
+.dark .dropdown-menu {
+  background: rgba(38, 49, 66, 0.98);
 }
