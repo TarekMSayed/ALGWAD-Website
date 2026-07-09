@@ -26,5 +26,6 @@
 {{ partial "footer.html" . }}
 {{ partial "whatsapp-button.html" . }}
 <script>document.getElementById("theme-toggle").addEventListener("click",function(){var isDark=document.documentElement.classList.toggle("dark");localStorage.theme=isDark?"dark":"light"})</script>
+<script>(function(){var nav=document.getElementById("site-nav");var lastY=window.scrollY;var ticking=false;function onScroll(){var y=window.scrollY;if(y>lastY&&y>80){nav.classList.add("-translate-y-full")}else{nav.classList.remove("-translate-y-full")}lastY=y;ticking=false}window.addEventListener("scroll",function(){if(!ticking){window.requestAnimationFrame(onScroll);ticking=true}},{passive:true})})()</script>
 </body>
 </html>
