@@ -67,6 +67,10 @@ ALGWAD
 {{ range $networks.Pages }}
 <a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ .Permalink }}">{{ .Title }}</a>
 {{ end }}
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_pc" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_laptop" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_tower" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_workstation" }}</a>
 </div>
 </div>
 <div class="nav-dropdown relative group py-2">
@@ -80,18 +84,6 @@ ALGWAD
 <a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_3d" }}</a>
 <a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_interactive" }}</a>
 <a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_led" }}</a>
-</div>
-</div>
-<div class="nav-dropdown relative group py-2">
-<button class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
-<span>{{ i18n "nav_computing" }}</span>
-<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
-</button>
-<div class="dropdown-menu absolute top-full start-0 min-w-[180px] pt-6 pb-4 rounded-lg shadow-2xl z-50">
-<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_pc" }}</a>
-<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_laptop" }}</a>
-<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_tower" }}</a>
-<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_workstation" }}</a>
 </div>
 </div>
 <a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="{{ $supplies.Permalink }}">{{ i18n "nav_supplies" }}</a>
@@ -124,6 +116,10 @@ ALGWAD
 {{ range $networks.Pages }}
 <a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ .Permalink }}">{{ .Title }}</a>
 {{ end }}
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_pc" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_laptop" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_tower" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_workstation" }}</a>
 </div>
 </details>
 <details class="group/sub w-full text-center">
@@ -137,18 +133,6 @@ ALGWAD
 <a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_3d" }}</a>
 <a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_interactive" }}</a>
 <a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_av_led" }}</a>
-</div>
-</details>
-<details class="group/sub w-full text-center">
-<summary class="flex items-center justify-center gap-1 py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-<span>{{ i18n "nav_computing" }}</span>
-<span class="material-symbols-outlined text-sm transition-transform group-open/sub:rotate-180">keyboard_arrow_down</span>
-</summary>
-<div class="flex flex-col items-center gap-1 pb-2">
-<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_pc" }}</a>
-<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_laptop" }}</a>
-<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_tower" }}</a>
-<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_workstation" }}</a>
 </div>
 </details>
 <a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="{{ $supplies.Permalink }}">{{ i18n "nav_supplies" }}</a>

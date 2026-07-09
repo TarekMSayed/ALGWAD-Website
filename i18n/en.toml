@@ -13,13 +13,7 @@ other = "Infrastructure"
 other = "IT Support"
 
 [nav_networks]
-other = "Networks"
-[nav_networks_servers]
-other = "Servers"
-[nav_networks_switches]
-other = "Switches"
-[nav_networks_fiber]
-other = "Fiber Optics"
+other = "Networks & Computing"
 
 [nav_av]
 other = "AV Solutions"
@@ -34,8 +28,6 @@ other = "Interactive Screens"
 [nav_av_led]
 other = "LED Screens"
 
-[nav_computing]
-other = "Computing"
 [nav_computing_pc]
 other = "PC"
 [nav_computing_laptop]

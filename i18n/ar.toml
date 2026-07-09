@@ -13,13 +13,7 @@ other = "البنية التحتية"
 other = "الدعم الفني"
 
 [nav_networks]
-other = "الشبكات"
-[nav_networks_servers]
-other = "سيرفرات"
-[nav_networks_switches]
-other = "سويتشات"
-[nav_networks_fiber]
-other = "كابلات فايبر"
+other = "الشبكات والحاسبات"
 
 [nav_av]
 other = "الصوتيات والمرئيات"
@@ -34,8 +28,6 @@ other = "شاشات تفاعلية"
 [nav_av_led]
 other = "شاشات ليد سكرين"
 
-[nav_computing]
-other = "الحاسبات"
 [nav_computing_pc]
 other = "PC"
 [nav_computing_laptop]
