@@ -1,0 +1,19 @@
+<div class="bg-surface-tint/5 border border-secondary/20 rounded-2xl p-10 md:p-14 backdrop-blur-md shadow-2xl">
+<form class="space-y-8">
+<div>
+<label class="block font-label-sm text-secondary-fixed mb-3 uppercase tracking-widest text-base">{{ i18n "form_name_label" }}</label>
+<input name="name" class="w-full bg-surface-container dark:bg-inverse-surface/80 border border-outline/30 rounded-lg py-5 px-8 text-lg text-on-surface dark:text-surface-bright focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all outline-none" placeholder="{{ i18n "form_name_placeholder" }}" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-secondary-fixed mb-3 uppercase tracking-widest text-base">{{ i18n "email_label" }}</label>
+<input name="email" class="w-full bg-surface-container dark:bg-inverse-surface/80 border border-outline/30 rounded-lg py-5 px-8 text-lg text-on-surface dark:text-surface-bright focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all outline-none" placeholder="{{ i18n "form_email_placeholder" }}" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-secondary-fixed mb-3 uppercase tracking-widest text-base">{{ i18n "form_message_label" }}</label>
+<textarea name="message" class="w-full bg-surface-container dark:bg-inverse-surface/80 border border-outline/30 rounded-lg py-5 px-8 text-lg text-on-surface dark:text-surface-bright focus:border-secondary-fixed focus:ring-1 focus:ring-secondary-fixed transition-all outline-none resize-none" placeholder="{{ i18n "form_message_placeholder" }}" rows="5"></textarea>
+</div>
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed py-6 rounded-lg font-headline-lg-mobile text-xl font-bold hover:bg-secondary-fixed-dim transition-all shadow-[0_0_30px_rgba(18,115,235,0.2)] dark:shadow-[0_0_30px_rgba(255,222,165,0.15)] uppercase tracking-widest" type="submit">
+{{ i18n "form_submit" }}
+</button>
+</form>
+</div>

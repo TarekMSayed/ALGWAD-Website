@@ -1,0 +1,21 @@
+<section class="py-24 bg-surface/60 dark:bg-inverse-surface/60 border-y border-secondary/10 overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-secondary-fixed mb-4 uppercase tracking-[0.2em]">{{ i18n "success_partners" }}</h2>
+<div class="w-20 h-1 bg-secondary/30 mx-auto rounded-full"></div>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-16 md:gap-32 opacity-70 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="h-28 md:h-36 flex items-center justify-center group">
+{{ with resources.Get "images/hp-logo.png" }}{{ with .Resize "400x png" }}
+<img alt="HP Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125" src="{{ .RelPermalink }}"/>
+{{ end }}{{ end }}
+</div>
+<div class="h-28 md:h-36 flex items-center justify-center group">
+<img alt="HPE Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125 shadow-sm" src="{{ "assets/hpe.svg" | absURL }}"/>
+</div>
+<div class="h-28 md:h-36 flex items-center justify-center group">
+<img alt="Dell Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125" src="{{ "assets/dell.svg" | absURL }}"/>
+</div>
+</div>
+</div>
+</section>
