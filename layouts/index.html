@@ -26,6 +26,9 @@
 <p class="font-body-md text-xl text-on-surface-variant dark:text-surface-variant mb-12 leading-relaxed">
 {{ .Params.contactIntro }}
 </p>
+{{ with resources.Get "images/cta-building.jpg" }}
+<img alt="" class="w-full h-56 md:h-64 object-cover rounded-2xl mb-12 grayscale-[40%] hover:grayscale-0 transition-all duration-500" src="{{ .RelPermalink }}"/>
+{{ end }}
 <div class="space-y-10">
 <div class="flex items-center gap-6">
 <div class="w-16 h-16 rounded-full border border-secondary-fixed/30 flex items-center justify-center bg-surface-container/50 dark:bg-inverse-surface/50 text-secondary-fixed">

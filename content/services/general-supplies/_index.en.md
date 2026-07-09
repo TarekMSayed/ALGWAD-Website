@@ -1,6 +1,7 @@
 ---
 title: "General Supplies"
 icon: "precision_manufacturing"
+image: "images/general-supplies.jpg"
 weight: 40
 featured: true
 heroSize: "large"

@@ -1,6 +1,7 @@
 ---
 title: "Technology & Communications"
 icon: "devices"
+image: "images/tech-communications.jpg"
 weight: 10
 featured: true
 heroSize: "large"

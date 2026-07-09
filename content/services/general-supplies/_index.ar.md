@@ -1,6 +1,7 @@
 ---
 title: "التوريدات العمومية"
 icon: "precision_manufacturing"
+image: "images/general-supplies.jpg"
 weight: 40
 featured: true
 heroSize: "large"

@@ -1,15 +1,24 @@
+{{ $page := . }}
 {{ $large := eq .Params.heroSize "large" }}
-<a href="{{ .Permalink }}" class="{{ if $large }}md:col-span-8{{ else }}md:col-span-4{{ end }} bg-surface-container/40 dark:bg-inverse-surface/40 backdrop-blur-sm border border-secondary/20 rounded-xl p-12 hover:border-secondary-fixed transition-all duration-500 group relative overflow-hidden block">
+<a href="{{ .Permalink }}" class="{{ if $large }}md:col-span-8{{ else }}md:col-span-4{{ end }} bg-surface-container/40 dark:bg-inverse-surface/40 backdrop-blur-sm border border-secondary/20 rounded-xl hover:border-secondary-fixed transition-all duration-500 group relative overflow-hidden block">
 {{ if $large }}
-<div class="absolute top-0 end-0 w-64 h-64 bg-secondary-fixed/10 rounded-full blur-[100px] -me-32 -mt-32 transition-transform group-hover:scale-150"></div>
+<div class="absolute top-0 end-0 w-64 h-64 bg-secondary-fixed/10 rounded-full blur-[100px] -me-32 -mt-32 transition-transform group-hover:scale-150 z-0"></div>
 {{ end }}
-<div class="relative z-10">
-<div class="w-28 h-28 rounded-lg bg-gradient-to-br from-secondary-fixed/25 via-secondary-fixed/10 to-transparent flex items-center justify-center mb-10 border border-secondary-fixed/40">
-<span class="material-symbols-outlined text-8xl text-secondary-fixed transition-transform group-hover:scale-110 duration-300" style='font-variation-settings: "FILL" 1;'>{{ .Params.icon }}</span>
+{{ with $page.Params.image }}
+{{ with resources.Get . }}
+<div class="relative h-48 md:h-56 overflow-hidden">
+<img alt="" class="w-full h-full object-cover grayscale-[60%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" src="{{ .RelPermalink }}"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container dark:from-inverse-surface to-transparent"></div>
 </div>
-<h3 class="{{ if $large }}font-headline-lg text-headline-lg{{ else }}font-headline-lg-mobile text-headline-lg-mobile{{ end }} text-on-surface dark:text-surface-bright mb-6">{{ .Title }}</h3>
+{{ end }}
+{{ end }}
+<div class="relative z-10 p-12 {{ if $page.Params.image }}pt-8{{ end }}">
+<div class="w-28 h-28 rounded-lg bg-gradient-to-br from-secondary-fixed/25 via-secondary-fixed/10 to-transparent flex items-center justify-center mb-10 border border-secondary-fixed/40 {{ if $page.Params.image }}-mt-24{{ end }} backdrop-blur-md">
+<span class="material-symbols-outlined text-8xl text-secondary-fixed transition-transform group-hover:scale-110 duration-300" style='font-variation-settings: "FILL" 1;'>{{ $page.Params.icon }}</span>
+</div>
+<h3 class="{{ if $large }}font-headline-lg text-headline-lg{{ else }}font-headline-lg-mobile text-headline-lg-mobile{{ end }} text-on-surface dark:text-surface-bright mb-6">{{ $page.Title }}</h3>
 <p class="font-body-md {{ if $large }}text-xl{{ else }}text-lg{{ end }} text-on-surface-variant dark:text-surface-variant leading-relaxed">
-{{ .Params.summary }}
+{{ $page.Params.summary }}
 </p>
 </div>
 </a>
