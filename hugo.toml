@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
   [languages.en.params]
     dir = "ltr"
     shortLabel = "EN"
-    tagline = "Supplies & Contracting"
+    tagline = "Supplies & IT Solutions"
     ogLocale = "en_US"
     addressLines = ["10 Arab Contractors Buildings,", "Sheraton Heliopolis, Cairo, Egypt"]
 
@@ -23,14 +23,14 @@ disableKinds = ["taxonomy", "term"]
   [languages.ar.params]
     dir = "rtl"
     shortLabel = "عربي"
-    tagline = "الجواد للتوريدات والمقاولات"
+    tagline = "الجواد للتوريدات الهندسية وحلول تكنولوجيا المعلومات"
     ogLocale = "ar_AR"
     addressLines = ["10 عمارات المقاولون العرب،", "شيراتون هليوبوليس، القاهرة، مصر"]
 
 [params]
   email = "info@algwad.com"
   phone = "+20 1126198498"
-  whatsappNumbers = ["+20 1288355586", "+20 1018010180"]
+  whatsappNumbers = ["+20 1555333213", "+20 1037746044"]
   whatsappLink = "https://wa.me/201555333213"
 
 [outputs]

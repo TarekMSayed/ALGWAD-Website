@@ -1,8 +1,8 @@
 ---
-title: "ALGWAD - Supplies and Contracting"
-description: "ALGWAD for Supplies and Contracting — integrated industrial and technology solutions in Egypt: networks, AV systems, computing, and general project supplies."
+title: "ALGWAD - Engineering Supplies and IT Solutions"
+description: "ALGWAD for Engineering Supplies and IT Solutions — integrated industrial and technology solutions in Egypt: networks, AV systems, computing, and general project supplies."
 heroHighlight: "ALGWAD"
-heroRest: "for Supplies and Contracting"
+heroRest: "for Engineering Supplies and IT Solutions"
 heroSubheading: >
   Leaders in providing integrated industrial and technological solutions. We
   combine deep expertise with innovation to meet your project needs with the
