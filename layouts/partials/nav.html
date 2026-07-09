@@ -1,3 +1,4 @@
+{{ $itSolutions := .Site.GetPage "services/it-solutions" }}
 {{ $networks := .Site.GetPage "services/networks-computing" }}
 {{ $display := .Site.GetPage "services/display-control-systems" }}
 {{ $supplies := .Site.GetPage "services/general-supplies" }}
@@ -46,6 +47,18 @@ ALGWAD
 <div class="flex justify-center md:justify-start items-center border-t border-outline-variant/20 pt-6 mt-2">
 <div class="hidden md:flex items-center gap-12 font-label-sm text-label-sm uppercase tracking-widest">
 <div class="nav-dropdown relative group py-2">
+<a href="{{ $itSolutions.Permalink }}" class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
+<span>{{ i18n "nav_it" }}</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</a>
+<div class="dropdown-menu absolute top-full start-0 min-w-[200px] pt-6 pb-4 rounded-lg shadow-2xl z-50">
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_it_hardware" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_it_software" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_it_infrastructure" }}</a>
+<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_it_support" }}</a>
+</div>
+</div>
+<div class="nav-dropdown relative group py-2">
 <a href="{{ $networks.Permalink }}" class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
 <span>{{ i18n "nav_networks" }}</span>
 <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
@@ -90,6 +103,18 @@ ALGWAD
 <span class="material-symbols-outlined">menu</span>
 </summary>
 <div class="flex flex-col items-center gap-1 pt-2 pb-4 font-label-sm text-label-sm uppercase tracking-widest w-full">
+<details class="group/sub w-full text-center">
+<summary class="flex items-center justify-center gap-1 py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<span>{{ i18n "nav_it" }}</span>
+<span class="material-symbols-outlined text-sm transition-transform group-open/sub:rotate-180">keyboard_arrow_down</span>
+</summary>
+<div class="flex flex-col items-center gap-1 pb-2">
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_it_hardware" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_it_software" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_it_infrastructure" }}</a>
+<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_it_support" }}</a>
+</div>
+</details>
 <details class="group/sub w-full text-center">
 <summary class="flex items-center justify-center gap-1 py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed cursor-pointer list-none [&::-webkit-details-marker]:hidden">
 <span>{{ i18n "nav_networks" }}</span>

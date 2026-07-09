@@ -1,6 +1,17 @@
 [contact_cta]
 other = "تواصل معنا"
 
+[nav_it]
+other = "حلول تقنية المعلومات"
+[nav_it_hardware]
+other = "الأجهزة"
+[nav_it_software]
+other = "البرمجيات"
+[nav_it_infrastructure]
+other = "البنية التحتية"
+[nav_it_support]
+other = "الدعم الفني"
+
 [nav_networks]
 other = "الشبكات"
 [nav_networks_servers]

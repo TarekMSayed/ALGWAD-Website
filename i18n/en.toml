@@ -1,6 +1,17 @@
 [contact_cta]
 other = "CONTACT US"
 
+[nav_it]
+other = "IT Solutions"
+[nav_it_hardware]
+other = "Hardware"
+[nav_it_software]
+other = "Software"
+[nav_it_infrastructure]
+other = "Infrastructure"
+[nav_it_support]
+other = "IT Support"
+
 [nav_networks]
 other = "Networks"
 [nav_networks_servers]
