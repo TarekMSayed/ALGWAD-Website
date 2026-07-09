@@ -7,7 +7,18 @@
 <div class="flex flex-col gap-4 w-full">
 <!-- Top Row: Brand and CTA -->
 <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
-<!-- Left: CTA and Language Switcher -->
+<!-- Start: Brand Elements -->
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-center sm:items-start">
+<a href="{{ $home }}" class="font-headline-lg text-2xl md:text-headline-lg font-bold text-secondary dark:text-secondary-fixed font-[Montserrat] leading-none mb-1" dir="ltr">
+ALGWAD
+</a>
+<div class="font-headline-lg text-sm md:text-2xl font-bold accent-gradient-text font-[Montserrat] leading-none uppercase tracking-tighter">
+{{ .Site.Language.Params.tagline }}
+</div>
+</div>
+</div>
+<!-- End: CTA and Language Switcher -->
 <div class="flex items-center gap-4 md:gap-6">
 <a class="bg-secondary-fixed text-on-secondary-fixed px-5 md:px-10 py-2 md:py-3 rounded font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all shadow-[0_0_15px_rgba(18,115,235,0.15)] dark:shadow-[0_0_15px_rgba(255,222,165,0.1)]" href="{{ $home }}#contact">
 {{ i18n "contact_cta" }}
@@ -30,20 +41,9 @@
 <span class="material-symbols-outlined dark:hidden">dark_mode</span>
 </button>
 </div>
-<!-- Right: Brand Elements -->
-<div class="flex items-center gap-4">
-<div class="flex flex-col items-center sm:items-end">
-<a href="{{ $home }}" class="font-headline-lg text-2xl md:text-headline-lg font-bold text-secondary dark:text-secondary-fixed font-[Montserrat] leading-none mb-1" dir="ltr">
-ALGWAD
-</a>
-<div class="font-headline-lg text-sm md:text-2xl font-bold accent-gradient-text font-[Montserrat] leading-none uppercase tracking-tighter">
-{{ .Site.Language.Params.tagline }}
-</div>
-</div>
-</div>
 </div>
 <!-- Bottom Row: Navigation Links -->
-<div class="flex justify-center md:justify-end items-center border-t border-outline-variant/20 pt-6 mt-2">
+<div class="flex justify-center md:justify-start items-center border-t border-outline-variant/20 pt-6 mt-2">
 <div class="hidden md:flex items-center gap-12 font-label-sm text-label-sm uppercase tracking-widest">
 <div class="nav-dropdown relative group py-2">
 <a href="{{ $networks.Permalink }}" class="flex items-center gap-1 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed transition-colors uppercase tracking-widest">
