@@ -1,13 +1,26 @@
 {{ define "main" }}
+{{ $page := . }}
 <section class="py-section-gap bg-surface dark:bg-inverse-surface relative">
 <div class="px-margin-mobile md:px-margin-desktop relative z-10">
 <div class="max-w-3xl mx-auto text-center">
-<div class="w-28 h-28 mx-auto rounded-lg bg-gradient-to-br from-secondary-fixed/25 via-secondary-fixed/10 to-transparent flex items-center justify-center mb-8 border border-secondary-fixed/40">
-<span class="material-symbols-outlined text-8xl text-secondary-fixed" style='font-variation-settings: "FILL" 1;'>{{ .Params.icon }}</span>
+{{ with $page.Params.image }}
+{{ with resources.Get . }}
+<div class="relative h-56 md:h-72 rounded-2xl overflow-hidden mb-8">
+<img alt="{{ $page.Title }}" class="w-full h-full object-cover" src="{{ .RelPermalink }}"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface dark:from-inverse-surface to-transparent"></div>
 </div>
-<h1 class="font-headline-lg text-headline-lg text-on-surface dark:text-surface-bright mb-6">{{ .Title }}</h1>
-<p class="font-body-md text-xl text-on-surface-variant dark:text-surface-variant leading-relaxed">{{ .Params.summary }}</p>
-{{ with .Content }}
+<div class="w-28 h-28 mx-auto rounded-lg bg-gradient-to-br from-secondary-fixed/25 via-secondary-fixed/10 to-transparent flex items-center justify-center mb-8 border border-secondary-fixed/40 backdrop-blur-md -mt-24">
+<span class="material-symbols-outlined text-8xl text-secondary-fixed" style='font-variation-settings: "FILL" 1;'>{{ $page.Params.icon }}</span>
+</div>
+{{ end }}
+{{ else }}
+<div class="w-28 h-28 mx-auto rounded-lg bg-gradient-to-br from-secondary-fixed/25 via-secondary-fixed/10 to-transparent flex items-center justify-center mb-8 border border-secondary-fixed/40">
+<span class="material-symbols-outlined text-8xl text-secondary-fixed" style='font-variation-settings: "FILL" 1;'>{{ $page.Params.icon }}</span>
+</div>
+{{ end }}
+<h1 class="font-headline-lg text-headline-lg text-on-surface dark:text-surface-bright mb-6">{{ $page.Title }}</h1>
+<p class="font-body-md text-xl text-on-surface-variant dark:text-surface-variant leading-relaxed">{{ $page.Params.summary }}</p>
+{{ with $page.Content }}
 <div class="font-body-md text-lg text-on-surface-variant dark:text-surface-variant leading-relaxed mt-8 text-start">{{ . }}</div>
 {{ end }}
 </div>
