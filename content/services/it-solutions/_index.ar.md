@@ -1,7 +1,7 @@
 ---
 title: "حلول تقنية المعلومات"
 icon: "devices"
-image: "images/it-solutions.jpg"
+image: "images/it-solutions.png"
 weight: 10
 featured: true
 heroSize: "large"
