@@ -1,7 +1,7 @@
 - name: "HP"
-  logo: "images/hp-logo.png"
+  logo: "images/vendors/hp-logo.png"
   resize: true
 - name: "HPE"
-  logo: "images/hpe.svg"
+  logo: "images/vendors/hpe.svg"
 - name: "Dell"
-  logo: "images/dell.svg"
+  logo: "images/vendors/dell.svg"
