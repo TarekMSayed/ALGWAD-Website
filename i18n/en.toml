@@ -40,13 +40,24 @@ other = "Workstation"
 [nav_supplies]
 other = "Supplies"
 
+[nav_vendors]
+other = "Vendors"
+
 [nav_contact]
 other = "Contact"
 
 [fields_of_excellence]
 other = "Fields of Excellence"
 [success_partners]
-other = "Success Partners"
+other = "Our Vendor Partners"
+[vendors_cta]
+other = "See All Vendors"
+[vendors_scroll_prev]
+other = "Scroll left"
+[vendors_scroll_next]
+other = "Scroll right"
+[vendors_page_intro]
+other = "We work with a trusted network of global manufacturers to source and supply the hardware and systems behind every project we deliver."
 
 [email_label]
 other = "Email Address"

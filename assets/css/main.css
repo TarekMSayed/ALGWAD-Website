@@ -5,6 +5,12 @@
 
 
 
+
+
+
+
+
+
 @theme {
   /* Colors — transcribed 1:1 from DESIGN.md's YAML token block */
   /* Light-mode neutrals + accent retinted to follow metragroup.com's cool
@@ -168,6 +174,15 @@ body {
 
 .text-surface-bright {
   text-rendering: optimizeLegibility;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-dropdown:hover .dropdown-menu {

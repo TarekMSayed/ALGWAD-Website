@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="py-section-gap bg-surface dark:bg-inverse-surface relative">
+<div class="px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h1 class="font-headline-lg text-headline-lg text-secondary-fixed mb-6 uppercase tracking-wide">{{ .Title }}</h1>
+<div class="w-32 h-1.5 bg-secondary/50 mx-auto rounded-full mb-8"></div>
+<p class="font-body-md text-xl text-on-surface-variant dark:text-surface-variant leading-relaxed">{{ i18n "vendors_page_intro" }}</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+{{ range hugo.Data.vendors }}
+<div class="bg-surface-container-lowest dark:bg-inverse-surface/60 border border-outline-variant/40 dark:border-secondary/10 rounded-xl flex items-center justify-center p-8 h-32 shadow-sm hover:shadow-md hover:border-secondary-fixed transition-all group">
+{{ partial "vendor-logo.html" . }}
+</div>
+{{ end }}
+</div>
+</div>
+</section>
+{{ end }}

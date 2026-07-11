@@ -1,0 +1,7 @@
+- name: "HP"
+  logo: "images/hp-logo.png"
+  resize: true
+- name: "HPE"
+  logo: "images/hpe.svg"
+- name: "Dell"
+  logo: "images/dell.svg"

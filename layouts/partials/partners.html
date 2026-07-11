@@ -1,21 +1,33 @@
+{{ $vendorsPage := .Site.GetPage "vendors" }}
+{{ $rtl := eq .Site.Language.Params.dir "rtl" }}
 <section class="py-24 bg-surface/60 dark:bg-inverse-surface/60 border-y border-secondary/10 overflow-hidden">
 <div class="px-margin-mobile md:px-margin-desktop">
 <div class="text-center mb-16">
 <h2 class="font-headline-lg text-headline-lg text-secondary-fixed mb-4 uppercase tracking-[0.2em]">{{ i18n "success_partners" }}</h2>
 <div class="w-20 h-1 bg-secondary/30 mx-auto rounded-full"></div>
 </div>
-<div class="flex flex-wrap justify-center items-center gap-16 md:gap-32 opacity-70 grayscale hover:grayscale-0 transition-all duration-700">
-<div class="h-28 md:h-36 flex items-center justify-center group">
-{{ with resources.Get "images/hp-logo.png" }}{{ with .Resize "400x png" }}
-<img alt="HP Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125" src="{{ .RelPermalink }}"/>
-{{ end }}{{ end }}
+<div class="relative max-w-4xl md:max-w-5xl mx-auto">
+<button id="vendors-prev" aria-label="{{ i18n "vendors_scroll_prev" }}" class="absolute top-1/2 -translate-y-1/2 start-0 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-surface-container-lowest dark:bg-inverse-surface border border-outline-variant/40 dark:border-secondary/20 flex items-center justify-center text-on-surface dark:text-surface-bright hover:text-secondary-fixed hover:border-secondary-fixed transition-all shadow-md">
+<span class="material-symbols-outlined">{{ if $rtl }}chevron_right{{ else }}chevron_left{{ end }}</span>
+</button>
+<div id="vendors-track" class="flex items-center justify-center gap-6 md:gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-14 md:px-20">
+{{ range hugo.Data.vendors }}
+<div class="shrink-0 w-44 md:w-56 h-32 md:h-36 bg-surface-container-lowest dark:bg-inverse-surface/60 border border-outline-variant/40 dark:border-secondary/10 rounded-xl flex items-center justify-center p-6 md:p-8 shadow-sm hover:shadow-md hover:border-secondary-fixed transition-all group snap-start">
+{{ partial "vendor-logo.html" . }}
 </div>
-<div class="h-28 md:h-36 flex items-center justify-center group">
-<img alt="HPE Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125 shadow-sm" src="{{ "assets/hpe.svg" | absURL }}"/>
+{{ end }}
 </div>
-<div class="h-28 md:h-36 flex items-center justify-center group">
-<img alt="Dell Logo" class="h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-125" src="{{ "assets/dell.svg" | absURL }}"/>
+<button id="vendors-next" aria-label="{{ i18n "vendors_scroll_next" }}" class="absolute top-1/2 -translate-y-1/2 end-0 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-surface-container-lowest dark:bg-inverse-surface border border-outline-variant/40 dark:border-secondary/20 flex items-center justify-center text-on-surface dark:text-surface-bright hover:text-secondary-fixed hover:border-secondary-fixed transition-all shadow-md">
+<span class="material-symbols-outlined">{{ if $rtl }}chevron_left{{ else }}chevron_right{{ end }}</span>
+</button>
 </div>
+{{ with $vendorsPage }}
+<div class="text-center mt-12">
+<a href="{{ .Permalink }}" class="inline-block bg-secondary-fixed text-on-secondary-fixed px-10 py-3 rounded font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all shadow-[0_0_15px_rgba(18,115,235,0.15)] dark:shadow-[0_0_15px_rgba(255,222,165,0.1)]">
+{{ i18n "vendors_cta" }}
+</a>
 </div>
+{{ end }}
 </div>
 </section>
+<script>(function(){var track=document.getElementById("vendors-track");if(!track)return;var prev=document.getElementById("vendors-prev");var next=document.getElementById("vendors-next");var rtl=document.documentElement.dir==="rtl";function amount(){return Math.round(track.clientWidth*0.8)}prev.addEventListener("click",function(){track.scrollBy({left:rtl?amount():-amount(),behavior:"smooth"})});next.addEventListener("click",function(){track.scrollBy({left:rtl?-amount():amount(),behavior:"smooth"})})})()</script>

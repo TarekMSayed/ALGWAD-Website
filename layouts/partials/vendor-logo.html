@@ -1,0 +1,6 @@
+{{ $v := . }}
+{{ with resources.Get $v.logo }}
+{{ $img := . }}
+{{ if $v.resize }}{{ $img = ($img.Resize "300x png") }}{{ end }}
+<img alt="{{ $v.name }} logo" class="max-h-12 max-w-28 md:max-h-14 md:max-w-32 w-auto h-auto object-contain transition-all duration-300 group-hover:scale-110" src="{{ $img.RelPermalink }}"/>
+{{ end }}

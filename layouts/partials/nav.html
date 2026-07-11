@@ -2,6 +2,7 @@
 {{ $networks := .Site.GetPage "services/networks-computing" }}
 {{ $display := .Site.GetPage "services/display-control-systems" }}
 {{ $supplies := .Site.GetPage "services/general-supplies" }}
+{{ $vendors := .Site.GetPage "vendors" }}
 {{ $home := relLangURL "" }}
 <nav id="site-nav" class="bg-surface/90 dark:bg-inverse-surface/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm transition-transform duration-300">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4">
@@ -87,6 +88,7 @@ ALGWAD
 </div>
 </div>
 <a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="{{ $supplies.Permalink }}">{{ i18n "nav_supplies" }}</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="{{ $vendors.Permalink }}">{{ i18n "nav_vendors" }}</a>
 <a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed duration-300 transition-colors uppercase tracking-widest" href="{{ $home }}#contact">{{ i18n "nav_contact" }}</a>
 </div>
 <!-- Mobile Menu (native details/summary, no JS required) -->
@@ -136,6 +138,7 @@ ALGWAD
 </div>
 </details>
 <a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="{{ $supplies.Permalink }}">{{ i18n "nav_supplies" }}</a>
+<a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="{{ $vendors.Permalink }}">{{ i18n "nav_vendors" }}</a>
 <a class="py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed" href="{{ $home }}#contact">{{ i18n "nav_contact" }}</a>
 </div>
 </details>

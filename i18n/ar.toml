@@ -40,13 +40,24 @@ other = "Workstation"
 [nav_supplies]
 other = "التوريدات"
 
+[nav_vendors]
+other = "الموردين"
+
 [nav_contact]
 other = "اتصل بنا"
 
 [fields_of_excellence]
 other = "مجالات التميز"
 [success_partners]
-other = "شركاؤنا في النجاح"
+other = "شركاؤنا الموردون"
+[vendors_cta]
+other = "عرض جميع الموردين"
+[vendors_scroll_prev]
+other = "التمرير لليسار"
+[vendors_scroll_next]
+other = "التمرير لليمين"
+[vendors_page_intro]
+other = "نتعاون مع شبكة موثوقة من الشركات المصنعة العالمية لتوفير الأجهزة والأنظمة التي تقف خلف كل مشروع ننفذه."
 
 [email_label]
 other = "البريد الإلكتروني"
