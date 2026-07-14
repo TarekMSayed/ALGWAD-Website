@@ -187,6 +187,33 @@ body {
   display: none;
 }
 
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: start;
+  font-size: var(--text-base, 1rem);
+}
+
+.page-content th,
+.page-content td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-outline-variant);
+}
+
+.page-content th {
+  background-color: var(--color-surface-container);
+  color: var(--color-on-surface);
+  font-weight: 600;
+}
+
+.page-content tr:nth-child(even) td {
+  background-color: var(--color-surface-container-low);
+}
+
+.dark .page-content tr:nth-child(even) td {
+  background-color: color-mix(in srgb, var(--color-inverse-surface) 92%, white 8%);
+}
+
 .nav-dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
