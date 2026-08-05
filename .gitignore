@@ -2,3 +2,7 @@ node_modules/
 public/
 resources/
 .hugo_build.lock
+.claude
+.vscode/
+.idea/
+debug
