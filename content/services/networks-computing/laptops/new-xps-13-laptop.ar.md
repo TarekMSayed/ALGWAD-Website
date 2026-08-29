@@ -1,5 +1,5 @@
 ---
-title: "Laptop XPS 13 الجديد"
+title: "Laptop XPS 13 new"
 icon: "laptop"
 weight: 10
 image: "images/service/networks-computing/laptops/xps-13.jpg"
