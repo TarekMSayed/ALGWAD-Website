@@ -14,7 +14,7 @@ disableKinds = ["taxonomy", "term"]
     shortLabel = "EN"
     tagline = "Supplies & IT Solutions"
     ogLocale = "en_US"
-    addressLines = ["10 Arab Contractors Buildings,", "Sheraton Heliopolis, Cairo, Egypt"]
+    addressLines = ["Al Obour, 5th District,", "Dr. Abdullah Al-Mashad St., Block 16087, Plot 20,", "Cairo, Egypt"]
 
 [languages.ar]
   label = "العربية"
@@ -25,7 +25,7 @@ disableKinds = ["taxonomy", "term"]
     shortLabel = "عربي"
     tagline = "الجواد للتوريدات الهندسية وحلول تكنولوجيا المعلومات"
     ogLocale = "ar_AR"
-    addressLines = ["10 عمارات المقاولون العرب،", "شيراتون هليوبوليس، القاهرة، مصر"]
+    addressLines = ["العبور، الحي الخامس،", "شارع دكتور عبدالله المشد، بلوك 16087، قطعة 20،", "القاهرة، مصر"]
 
 [params]
   email = "info@algwad.com"
