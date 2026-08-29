@@ -14,7 +14,7 @@ disableKinds = ["taxonomy", "term"]
     shortLabel = "EN"
     tagline = "Supplies & IT Solutions"
     ogLocale = "en_US"
-    addressLines = ["Al Obour, 5th District,", "Dr. Abdullah Al-Mashad St., Block 16087, Plot 20,", "Cairo, Egypt"]
+    addressLines = ["Al Obour, 5th District,", "Dr. Abdullah Al-Mashad St.,", "Block 16087, Plot 20,", "Cairo, Egypt"]
 
 [languages.ar]
   label = "العربية"
