@@ -208,6 +208,24 @@ body {
   background-color: color-mix(in srgb, var(--color-inverse-surface) 92%, white 8%);
 }
 
+.page-content ul,
+.page-content ol {
+  margin: 1rem 0;
+  padding-inline-start: 1.5rem;
+}
+
+.page-content ul {
+  list-style: disc;
+}
+
+.page-content ol {
+  list-style: decimal;
+}
+
+.page-content li + li {
+  margin-top: 0.5rem;
+}
+
 .hero-photo-scrim {
   background-color: color-mix(in srgb, var(--color-surface) 55%, transparent);
 }
