@@ -2,17 +2,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-
-
-
-
-
-
-
-
-
-
-
 @theme {
   /* Colors — transcribed 1:1 from DESIGN.md's YAML token block */
   /* Light-mode neutrals + accent retinted to follow metragroup.com's cool
@@ -219,6 +208,14 @@ body {
   background-color: color-mix(in srgb, var(--color-inverse-surface) 92%, white 8%);
 }
 
+.hero-photo-scrim {
+  background-color: color-mix(in srgb, var(--color-surface) 55%, transparent);
+}
+
+.dark .hero-photo-scrim {
+  background-color: color-mix(in srgb, var(--color-inverse-surface) 55%, transparent);
+}
+
 .nav-dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
@@ -239,3 +236,4 @@ body {
   background: rgba(38, 49, 66, 0.98);
   border-color: rgba(255, 222, 165, 0.2);
 }
+
