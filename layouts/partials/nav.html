@@ -68,8 +68,6 @@ ALGWAD
 {{ range $networks.Pages }}
 <a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ .Permalink }}">{{ .Title }}</a>
 {{ end }}
-<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_pc" }}</a>
-<a class="block px-6 py-2.5 text-on-surface dark:text-surface-bright hover:bg-secondary-fixed/10 hover:text-secondary-fixed transition-colors border-s-2 border-transparent hover:border-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_workstation" }}</a>
 </div>
 </div>
 <div class="nav-dropdown relative group py-2">
@@ -115,10 +113,7 @@ ALGWAD
 <div class="flex flex-col items-center gap-1 pb-2">
 {{ range $networks.Pages }}
 <a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ .Permalink }}">{{ .Title }}</a>
-{{ end }}
-<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_pc" }}</a>
-<a class="py-2 text-on-surface/80 dark:text-surface-bright/80 hover:text-secondary-fixed" href="{{ $home }}#services">{{ i18n "nav_computing_workstation" }}</a>
-</div>
+{{ end }}</div>
 </details>
 <details class="group/sub w-full text-center">
 <summary class="flex items-center justify-center gap-1 py-3 text-on-surface-variant dark:text-surface-variant hover:text-secondary-fixed cursor-pointer list-none [&::-webkit-details-marker]:hidden">

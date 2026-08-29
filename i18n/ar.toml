@@ -28,10 +28,6 @@ other = "شاشات تفاعلية"
 [nav_av_led]
 other = "شاشات ليد سكرين"
 
-[nav_computing_pc]
-other = "كمبيوتر مكتبي"
-[nav_computing_workstation]
-other = "محطة عمل"
 
 [nav_supplies]
 other = "التوريدات"

@@ -28,10 +28,6 @@ other = "Interactive Screens"
 [nav_av_led]
 other = "LED Screens"
 
-[nav_computing_pc]
-other = "PC"
-[nav_computing_workstation]
-other = "Workstation"
 
 [nav_supplies]
 other = "Supplies"
