@@ -206,6 +206,11 @@ body {
   font-weight: 600;
 }
 
+.dark .page-content th {
+  background-color: color-mix(in srgb, var(--color-inverse-surface) 85%, white 15%);
+  color: var(--color-surface-bright);
+}
+
 .page-content tr:nth-child(even) td {
   background-color: var(--color-surface-container-low);
 }
