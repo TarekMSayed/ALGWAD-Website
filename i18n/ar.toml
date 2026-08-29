@@ -83,15 +83,15 @@ other = "كيف يمكننا مساعدتك؟"
 other = "إرسال الرسالة"
 
 [footer_privacy]
-other = "Privacy Policy"
+other = "سياسة الخصوصية"
 [footer_terms]
-other = "Terms of Service"
+other = "شروط الخدمة"
 [footer_portfolio]
-other = "Service Portfolio"
+other = "قائمة الخدمات"
 [footer_office]
-other = "Cairo Office"
+other = "مكتب القاهرة"
 [footer_copyright]
-other = "© 2026 ALGWAD for engineering supplies and IT solutions. All rights reserved."
+other = "© 2026 الجواد للتوريدات الهندسية وحلول تكنولوجيا المعلومات. جميع الحقوق محفوظة."
 
 [whatsapp_tooltip]
 other = "تواصل عبر واتساب"
