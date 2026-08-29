@@ -29,13 +29,9 @@ other = "شاشات تفاعلية"
 other = "شاشات ليد سكرين"
 
 [nav_computing_pc]
-other = "PC"
-[nav_computing_laptop]
-other = "Laptop"
-[nav_computing_tower]
-other = "Tower"
+other = "كمبيوتر مكتبي"
 [nav_computing_workstation]
-other = "Workstation"
+other = "محطة عمل"
 
 [nav_supplies]
 other = "التوريدات"

@@ -30,10 +30,6 @@ other = "LED Screens"
 
 [nav_computing_pc]
 other = "PC"
-[nav_computing_laptop]
-other = "Laptop"
-[nav_computing_tower]
-other = "Tower"
 [nav_computing_workstation]
 other = "Workstation"
 
